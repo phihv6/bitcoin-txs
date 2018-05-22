@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Bitcoin_Txs::txs" title="Bitcoin transaction" module="Bitcoin_Txs" sortOrder="20" action="txs" resource="Bitcoin_Txs::txs"/>
+        <add id="Bitcoin_Txs::txs_index" title="Transactions information" module="Bitcoin_Txs" sortOrder="1" action="txs/index/index" resource="Bitcoin_Txs::txs_index" parent="Bitcoin_Txs::txs"/>
+        <add id="Bitcoin_Txs::txs_save" title="Search transactions" module="Bitcoin_Txs" sortOrder="2" action="txs/index/search" resource="Bitcoin_Txs::txs_save" parent="Bitcoin_Txs::txs"/>        
+    </menu>
+</config>
